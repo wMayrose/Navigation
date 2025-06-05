@@ -23,7 +23,13 @@ struct ContentView: View {
                     .multilineTextAlignment(.center)){
                         Text("Click me!")
                     } // end NavLink
+                NavigationLink(destination: SecondView()) {
+                    Text("Click ME for third page!")
+                } // end NavLink2
             } // end VStack
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         } // end NavStack
     } // end body
 } // end struct
